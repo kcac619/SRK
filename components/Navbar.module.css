@@ -1,0 +1,102 @@
+.header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000000fa;
+    z-index: 1000;
+    height: 8vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change.bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change.bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change.bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.navMenu {
+    position: fixed;
+    /* Changed to fixed for full-height sliding from the side */
+    top: 8vh;
+    left: -100%;
+    /* Adjust as needed based on the width of your menu */
+    width: 100%;
+    /* Set a fixed width for your menu */
+    height: 100%;
+    /* Full height */
+    background-color: #303f3de1;
+    /* border-right: 1px solid #ffffff; */
+    /* Adjusted to right border */
+    border-radius: 0 5px 5px 0;
+    /* Adjusted for left side appearance */
+    display: flex;
+    z-index: 999;
+    flex-direction: column;
+    align-items: flex-start;
+    /* animation: slideInRight 1s forwards; */
+    /* Animate the left property */
+}
+
+.navMenuOpen {
+    left: 0;
+    transition: left 4s ease-in-out;
+    /* Slide in to view */
+    align-items: left;
+    /* justify-content: center; */
+}
+
+.navMenu a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    align-items: left;
+    justify-content: left;
+}
+
+.navMenu a:hover {
+    color: #debb1d;
+}
+
+.loginButton {
+    padding: 0.5rem 1rem;
+    background-color: #addfeb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000000;
+    /* border-width: 2px; */
+
+}
+
+.loginButton:hover {
+    background-color: #2e788b;
+}
