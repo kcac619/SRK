@@ -28,7 +28,7 @@ const ContactSection = () => {
           Get in Touch
         </Heading>
         <Text fontSize="lg" mb={10} opacity={0.8}>
-          Have a question or project in mind? Let's connect!
+          Have a question or project in mind? Let&aposs connect!
         </Text>
 
         <VStack spacing={10} justify="center">
